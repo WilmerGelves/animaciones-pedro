@@ -1,11 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    width: 1920px;
     background-image: url(/Nubes/img/sky.jpg);
     background-size: cover;
 }
 .espacio{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
 }
@@ -22,9 +23,9 @@ body{
 }
 @keyframes nube1{
     0%{
-        transform: translateX(-250px);
+        transform: translateX(-20%);
     }
     100%{
-    transform: translateX(1400px);
+    transform: translateX(100%);
     }
 }

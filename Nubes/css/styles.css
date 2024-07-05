@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/Nubes/img/sky.jpg);
+    background-size: cover;
+}
+.espacio{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.primer-nube{
+    position: relative;
+    top: 20px;
+    animation: nube1 30s linear infinite;
+}
+.segunda-nube{  
+    position: relative;
+    top: 20px;
+    animation: nube1 40s linear  infinite;
+    
+}
+@keyframes nube1{
+    0%{
+        transform: translateX(-250px);
+    }
+    100%{
+    transform: translateX(1400px);
+    }
+}

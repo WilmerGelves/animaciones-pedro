@@ -1,0 +1,89 @@
+body {
+  font-family: cursive;
+  font-size:5rem;
+  background:#2c333a;
+}
+
+.letras{
+  margin-top: 10vh;
+  text-align: center;
+  perspective: 500px;
+}
+span{
+  display: inline-block;
+}
+
+.u{
+  color: rgb(134, 167, 134);
+  /*animation-name: cambio;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;*/
+  animation:cambio .5s ease-in-out,
+            cambio2 .5s ease-in-out 3s forwards;
+}
+.p{
+  color: rgb(187, 187, 235);
+  letter-spacing: 2vw;
+  animation:cambio .5s ease-in-out .4s,
+            cambio2 .5s ease-in-out 3.4s forwards;
+}
+
+.y{
+  color: rgb(134, 167, 134);
+  letter-spacing: 2vw;
+  animation:cambio .5s ease-in-out .8s,
+            cambio2 .5s ease-in-out 3.8s forwards;
+}
+
+.o{
+  color: rgb(187, 187, 235);
+  animation:cambio .5s ease-in-out 1.2s,
+            cambio2 .5s ease-in-out 4.2s forwards;
+}
+
+.v{
+  color: rgb(134, 167, 134);
+  animation:cambio .5s ease-in-out 1.6s,
+            cambio2 .5s ease-in-out 4.6s forwards;
+}
+
+.e{
+  color: rgb(134, 167, 134);
+  animation:cambio .5s ease-in-out 2s,
+            cambio2 .5s ease-in-out 5s forwards;
+}
+.r{
+  color: rgb(134, 167, 134);
+  animation:cambio .5s ease-in-out 2.4s,
+            cambio2 .5s ease-in-out 5.4s forwards;
+}
+
+@keyframes cambio{ 
+  0%{
+    transform: rotate3d(1,0,0,85deg);
+  }
+  100%{
+    transform: rotate3d(0,0,0);
+  }
+}
+@keyframes cambio2{
+  0%{
+    transform: rotate3d(0,0,0);
+  }
+  100%{
+    transform:rotate3d(1,0,0,-180deg);
+   /* transform: translateY(200px);*/
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

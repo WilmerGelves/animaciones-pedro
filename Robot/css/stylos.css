@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: "Roboto", sans-serif; display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:rosybrown;
+    height: 100vh;
+}
+.bloque{
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    animation: movimiento 1.5s ease-out forwards;
+}
+@media (max-width: 450px){
+    .bloque{
+        width: 80%;
+    }
+    .container{
+        font-family: "Roboto", sans-serif; display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:rosybrown;
+        height: 100vh;
+    }
+}
+
+.robot{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(234, 232, 232);
+    border-radius: 50%;
+    background-color: white;
+    position:relative;
+    bottom: 9vh;
+}
+
+.robot img{
+    max-width: 100px;
+    max-height: 100px;
+   border-radius: 50%;
+}
+.texto{
+    text-align: center;
+    font-size: small;
+}
+
+button{
+    padding: 1vh 1vw;
+    background-color: rgb(92, 92, 177);
+    border: none;
+    border-radius: 5px;
+    color:white ;
+}
+button:hover{
+    background-color: rgb(226, 99, 67);
+}
+
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform:translateY(-90%) ;
+    }
+    50%{
+        transform: translateY(-70%);
+    }
+    75%{
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(-75%);
+    }
+    
+}

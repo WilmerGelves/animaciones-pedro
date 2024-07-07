@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url(/Caminante/img/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.caminante{
+    width: 500px;
+    height: 500px;
+    background-image: url(/Caminante/img/walker_frames.png);
+    background-size: cover;
+    margin: 0 auto;
+    animation: movimiento 1s steps(10) infinite;
+    filter: brightness(1);
+    mix-blend-mode: multiply;
+    
+}
+
+
+@keyframes movimiento {
+    0% {
+        background-position-y: 0px;
+    }
+    100%{
+        background-position-y: -5000px;
+    }
+}

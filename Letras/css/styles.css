@@ -12,6 +12,7 @@ body {
 }
 span{
   display: inline-block;
+  height: 2em;
 }
 
 .u{
@@ -62,18 +63,18 @@ span{
 
 @keyframes cambio{ 
   0%{
-    transform: rotate3d(1,0,0,85deg);
+    rotate: x 90deg;
   }
   100%{
-    transform: rotate3d(0,0,0);
+    rotate: x 0deg;
   }
 }
 @keyframes cambio2{
   0%{
-    transform: rotate3d(0,0,0);
+    rotate: 0deg;
   }
   100%{
-    transform:rotate3d(1,0,0,-180deg);
+    rotate: -180deg;
    /* transform: translateY(200px);*/
   }
 
